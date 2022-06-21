@@ -51,7 +51,11 @@ foreach($reviews as $key => $review){
         usort($reviews, function($a, $b){
             return $a->rating < $b->rating ? -1 : 1;
         });
-        print_r($reviews);
+    }
+    if($_POST['rating'] == 'highest'){
+        usort($reviews, function($a, $b){
+            return $a->rating > $b->rating ? -1 : 1;
+        });
     }
 
     ?>
