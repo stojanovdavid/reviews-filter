@@ -2,7 +2,7 @@
         <form action="" method="POST" class="p-3">
             <div class="form-group">
                 <label for="rating">Order by rating</label> <br>
-                <select name="rating" id="rating" class="form-control">
+                <select name="rating" id="rating" class="form-select">
                     <option value=""></option>
                     <option value="highest">Highest First</option>
                     <option value="lowest">Lowest First</option>
@@ -10,7 +10,7 @@
             </div>
             <div class="form-group">
                 <label for="date">Order by date:</label> <br>
-                <select name="date" id="date" class="form-control">
+                <select name="date" id="date" class="form-select" aria-label="Default select example">
                     <option value=""></option>
                     <option value="oldest">Oldest First</option>
                     <option value="newest">Newest First</option>
@@ -18,7 +18,7 @@
             </div>
             <div class="form-group">
             <label for="">Minimum rating</label>
-                <select name="rating_min" id="rating_min" class="form-control">
+                <select name="rating_min" id="rating_min" class="form-select">
                     <option value=""></option>
                     <?php foreach($ratings as $key => $rating): ?>
                         <option value="<?= $rating  ?>"><?= $rating  ?></option>
@@ -27,7 +27,7 @@
             </div>
             <div class="form-group">
             <label for="">Prioritize by text</label> <br>
-                <select name="prioritize" id="prioritize" class="form-control">
+                <select name="prioritize" id="prioritize" class="form-select">
                     <option value=""></option>
                     <option value="Yes" name="prioritize">Yes</option>
                     <option value="No" name="prioritize">No</option>
